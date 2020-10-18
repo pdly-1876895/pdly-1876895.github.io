@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Phong's Website</title>
+        <link rel="stylesheet" href="anExternal.css">
+
+        <style>
+            .container {
+            position: relative;
+            text-align: center;
+            color: black;
+            }
+            .centered {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            </style>
     </head>
     <body>
+
         <h1 style="color:blue;">Paragraph 1</h1>
 
         <p style="color:red; font-family: Impact, Charcoal, sans-serif;  letter-spacing: 8px;">
             This is paragraph 1. Below is a picture of a lion
         </p>
 
-        <h2>Lion</h3>
+        <h2>Lion</h2>
         <a href="https://www.dictionary.com/browse/lion">
         <img src="https://static.nationalgeographic.co.uk/files/styles/image_3200/public/01-lion-populations-nationalgeographic_1777804.jpg?w=1200&h=800" title="Lion" style="width: 50px; height:50px; margin :5px">
         </a>
@@ -23,14 +39,40 @@
             This is paragraph 2. Below is a picture of lion king
         </p>
 
-        <h2>Lion King</h3>
+        <h2>Lion King</h2>
         <a href="https://en.wikipedia.org/wiki/The_Lion_King_(2019_film)">
         <img src="https://static01.nyt.com/images/2019/07/21/arts/21lionking-notebook1/21lionking-notebook1-superJumbo.jpg" title="Lion King" style="width: 50px; height:50px; margin :5px">
         </a>
-        
-        <p style="width:100px; height:100px; padding:20px; background-color: violet; font-family: Impact, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; border: solid; border-radius: 10px; border-color: indigo; border-width: 5px; text-align: center;">
+       
+        <p style="width:100px; height:100px; padding:20px; background-color: violet; font-family: Impact, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; border: dotted; border-radius: 10px; border-color: indigo; border-width: 5px; text-align: center;">
             Wall of text
         </p>
+        <img src="wolf.jpg" alt="Smiley face" width="42" height="42" style="vertical-align:middle;margin:20px 20px 20px 20px">
+
+        <p style="width:100px; height:100px; padding:20px; background-color: green; font-family: Impact, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; border:solid; border-radius: 10px; border-color: indigo; border-width: 5px; text-align: center;">
+            This text is bounded by round corners.
+        </p>
+    
+      <div class="container">
+        <img src="YaoMingMeme.jpg" alt="Snow" style="width:100%;">
+        <div class="centered">Centered</div>
+      </div>
+
+      <section>
+        <div style="float: left;background-color: red;margin: 5px;
+        width: 50px;
+        height: 150px;">
+            This is a float
+            </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+           Morbi tristique sapien ac erat tincidunt, sit amet dignissim
+           lectus vulputate. Donec id iaculis velit. Aliquam vel
+           malesuada erat. Praesent non magna ac massa aliquet tincidunt
+           vel in massa. Phasellus feugiat est vel leo finibus congue.</p>
+      </section>
+
+      
+
 
     </body>
 </html>
