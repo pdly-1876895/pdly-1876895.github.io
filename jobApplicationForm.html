@@ -16,14 +16,27 @@
 			<label>Email:</label> 
 			<input type="text" name="email">
 		</div>
+
+		<div class="field">
+			<label>Username:</label> 
+			<input type="text" name="username">
+		</div>
+
 		<div class="field">
 			<label>Password:</label> 
 			<input type="password" name="password">
 		</div>
+
 		<div class="field">
 			<label>Repeat password:</label> 
 			<input type="password" name="password_r">
 		</div>
+
+		<div class="field">
+			<label>Social Security Number:</label> 
+			<input type="password" name="social_security_number">
+		</div>
+
 	</fieldset>
 
 	<fieldset>
@@ -32,10 +45,11 @@
 			<label>Full Name:</label> 
 			<input type="text" name="name">
 		</div>
+
 		<div class="field">
-			<label>Type of phone number</label>
-			<input list="phoneType">
-			<datalist id="phoneType">
+			<label>Type of phone number:</label>
+			<input list="phone_type">
+			<datalist id="phone_type">
 				<option value="Home">
 				<option value="Mobile">
 				<option value="Work">
@@ -47,7 +61,18 @@
 			<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
 		</div>
 
+		<div class="field">
+			<label>Gender:</label> 
+			<select name="gender">
+				<option value="" selected="true">Choose your gender identity</option>
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="other">Other</option>
+				<option value="not_answer">I do not wish to answer</option>
 
+
+			</select>
+		</div>
 
 		<div class="field">
 			<label>Street Address:</label> 
@@ -146,6 +171,15 @@
 		</div>
 
 		<div class="field">
+			<label>How much traveling are you willing to do?</label>
+			<ul>
+				<li><input type="checkbox" name="100" value="100">100%</li>
+				<li><input type="checkbox" name="50" value="50">50%</li>
+				<li><input type="checkbox" name="0" value="0">0%</li>
+			</ul>
+		</div>
+
+		<div class="field">
 			<label>Hours available</label>
 			<table>
 				<tr>
@@ -189,9 +223,15 @@
 			<label>Why do you deserve this job?</label><br>
 			<textarea name="deserve" rows="6" cols="60"></textarea>
 		</div>
+
 		<div class="field">
 			<label>Describe a recent project:</label><br>
 			<textarea name="project" rows="6" cols="60"></textarea>
+		</div>
+
+		<div class="field">
+			<label>Tell me about a time when you have conflicts with your colleagues?</label><br>
+			<textarea name="conflict" rows="6" cols="60"></textarea>
 		</div>
 	</fieldset>
 
